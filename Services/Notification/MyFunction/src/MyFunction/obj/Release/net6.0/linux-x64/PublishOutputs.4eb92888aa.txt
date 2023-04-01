@@ -1,0 +1,9 @@
+/Users/kadirkurhan/Projects/MT.DEPREM/Services/Notification/MyFunction/src/MyFunction/bin/Release/net6.0/publish/MyFunction.deps.json
+/Users/kadirkurhan/Projects/MT.DEPREM/Services/Notification/MyFunction/src/MyFunction/bin/Release/net6.0/publish/MyFunction.runtimeconfig.json
+/Users/kadirkurhan/Projects/MT.DEPREM/Services/Notification/MyFunction/src/MyFunction/bin/Release/net6.0/publish/MyFunction.pdb
+/Users/kadirkurhan/Projects/MT.DEPREM/Services/Notification/MyFunction/src/MyFunction/bin/Release/net6.0/publish/Amazon.Lambda.Core.dll
+/Users/kadirkurhan/Projects/MT.DEPREM/Services/Notification/MyFunction/src/MyFunction/bin/Release/net6.0/publish/Amazon.Lambda.Serialization.SystemTextJson.dll
+/Users/kadirkurhan/Projects/MT.DEPREM/Services/Notification/MyFunction/src/MyFunction/bin/Release/net6.0/publish/AWSSDK.Core.dll
+/Users/kadirkurhan/Projects/MT.DEPREM/Services/Notification/MyFunction/src/MyFunction/bin/Release/net6.0/publish/AWSSDK.SecretsManager.dll
+/Users/kadirkurhan/Projects/MT.DEPREM/Services/Notification/MyFunction/src/MyFunction/bin/Release/net6.0/publish/AWSSDK.SimpleNotificationService.dll
+/Users/kadirkurhan/Projects/MT.DEPREM/Services/Notification/MyFunction/src/MyFunction/bin/Release/net6.0/publish/MyFunction.dll

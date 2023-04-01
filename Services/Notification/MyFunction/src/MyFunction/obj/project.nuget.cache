@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "DL7NUCmqCJys2S+AemRpZNZ4ugAXPSae3vu9rbhDEQurI6/BixOHAxmstY+gR5yeQAyTijYCOZtecjPAwaWZtw==",
+  "success": true,
+  "projectFilePath": "/Users/kadirkurhan/Projects/MT.DEPREM/Services/Notification/MyFunction/src/MyFunction/MyFunction.csproj",
+  "expectedPackageFiles": [
+    "/Users/kadirkurhan/.nuget/packages/amazon.lambda.core/2.1.0/amazon.lambda.core.2.1.0.nupkg.sha512",
+    "/Users/kadirkurhan/.nuget/packages/amazon.lambda.serialization.systemtextjson/2.3.1/amazon.lambda.serialization.systemtextjson.2.3.1.nupkg.sha512",
+    "/Users/kadirkurhan/.nuget/packages/awssdk.core/3.7.106.10/awssdk.core.3.7.106.10.nupkg.sha512",
+    "/Users/kadirkurhan/.nuget/packages/awssdk.secretsmanager/3.7.102.15/awssdk.secretsmanager.3.7.102.15.nupkg.sha512",
+    "/Users/kadirkurhan/.nuget/packages/awssdk.simplenotificationservice/3.7.101.37/awssdk.simplenotificationservice.3.7.101.37.nupkg.sha512",
+    "/Users/kadirkurhan/.nuget/packages/microsoft.netcore.app.crossgen2.osx-arm64/6.0.15/microsoft.netcore.app.crossgen2.osx-arm64.6.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}

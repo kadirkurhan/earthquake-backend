@@ -1,0 +1,56 @@
+﻿<Properties StartupConfiguration="{4361CFF9-9D81-4D5F-AFA6-6C40360607A1}|Default">
+  <MonoDevelop.Ide.ItemProperties.Services.Notification.MyFunction.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/kadirkurhan/Projects/MT.DEPREM/Services/Emergency/Earthquake.Emergency/Endpoints/CreateEmergency.cs" relfile="Services/Emergency/Earthquake.Emergency/Endpoints/CreateEmergency.cs" line="86" column="1" />
+      <Breakpoint file="/Users/kadirkurhan/Projects/MT.DEPREM/Services/Notification/MyFunction/src/MyFunction/Function.cs" relfile="Services/Notification/MyFunction/src/MyFunction/Function.cs" line="33" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{4361CFF9-9D81-4D5F-AFA6-6C40360607A1}" ItemName="Earthquake.Emergency" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Services.Emergency.Earthquake.Emergency PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/Emergency/Earthquake.Emergency/appsettings.Development.json">
+    <Files>
+      <File FileName="Services/Notification/MyFunction/src/MyFunction/Function.cs" Line="68" Column="1" />
+      <File FileName="Services/Notification/MyFunction/src/MyFunction/aws-lambda-tools-defaults.json" Line="1" Column="1" />
+      <File FileName="Services/Emergency/Earthquake.Emergency/Endpoints/CreateEmergency.cs" Line="98" Column="6" />
+      <File FileName="Services/Emergency/Earthquake.Emergency/Program.cs" Line="14" Column="1" />
+      <File FileName="Services/Notification/MyFunction/test/MyFunction.Tests/FunctionTest.cs" Line="17" Column="1" />
+      <File FileName="Services/Emergency/Earthquake.Emergency/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="Services/Emergency/Earthquake.Emergency/appsettings.Development.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Earthquake" expanded="True">
+            <Node name="Services" expanded="True">
+              <Node name="Emergency" expanded="True">
+                <Node name="Earthquake.Emergency" expanded="True">
+                  <Node name="Endpoints" expanded="True" />
+                  <Node name="Properties" expanded="True" />
+                  <Node name="appsettings.json" expanded="True">
+                    <Node name="appsettings.Development.json" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Notification" expanded="True">
+                <Node name="MyFunction" expanded="True">
+                  <Node name="Dependencies" expanded="True" />
+                </Node>
+                <Node name="MyFunction.Tests" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Earthquake.Authorization PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

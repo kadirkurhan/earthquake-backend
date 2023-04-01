@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "GH76hf5LDudKjLb97QJWfgkJfaBP+pu94599E5gR2YMF4Q0oc6wFdvUPXbKxKE5nfxbIFlUpcNG7P8tpG6LFmQ==",
+  "success": true,
+  "projectFilePath": "/Users/kadirkurhan/Projects/MT.DEPREM/Services/Emergency/Earthquake.Emergency/Earthquake.Emergency.csproj",
+  "expectedPackageFiles": [
+    "/Users/kadirkurhan/.nuget/packages/awssdk.core/3.7.106.10/awssdk.core.3.7.106.10.nupkg.sha512",
+    "/Users/kadirkurhan/.nuget/packages/awssdk.secretsmanager/3.7.102.15/awssdk.secretsmanager.3.7.102.15.nupkg.sha512",
+    "/Users/kadirkurhan/.nuget/packages/fastendpoints/5.8.0/fastendpoints.5.8.0.nupkg.sha512",
+    "/Users/kadirkurhan/.nuget/packages/fastendpoints.attributes/5.8.0/fastendpoints.attributes.5.8.0.nupkg.sha512",
+    "/Users/kadirkurhan/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
+    "/Users/kadirkurhan/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/kadirkurhan/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/kadirkurhan/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/kadirkurhan/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/kadirkurhan/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/kadirkurhan/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

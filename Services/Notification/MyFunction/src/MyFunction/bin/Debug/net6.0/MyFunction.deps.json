@@ -1,0 +1,113 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MyFunction/1.0.0": {
+        "dependencies": {
+          "AWSSDK.SecretsManager": "3.7.102.15",
+          "AWSSDK.SimpleNotificationService": "3.7.101.37",
+          "Amazon.Lambda.Core": "2.1.0",
+          "Amazon.Lambda.Serialization.SystemTextJson": "2.3.1"
+        },
+        "runtime": {
+          "MyFunction.dll": {}
+        }
+      },
+      "Amazon.Lambda.Core/2.1.0": {
+        "runtime": {
+          "lib/net6.0/Amazon.Lambda.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.Serialization.SystemTextJson/2.3.1": {
+        "dependencies": {
+          "Amazon.Lambda.Core": "2.1.0"
+        },
+        "runtime": {
+          "lib/net6.0/Amazon.Lambda.Serialization.SystemTextJson.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "AWSSDK.Core/3.7.106.10": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.106.10"
+          }
+        }
+      },
+      "AWSSDK.SecretsManager/3.7.102.15": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.106.10"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SecretsManager.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.102.15"
+          }
+        }
+      },
+      "AWSSDK.SimpleNotificationService/3.7.101.37": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.106.10"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.101.37"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MyFunction/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Amazon.Lambda.Core/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ok06UhfBZw6j6+PhiJR9C0EOMuJvnq8rMCHVkaFmPFrlI/q447ukwGZQKaAKqodV+MNTfpb/iPxjgUPVbSlVVw==",
+      "path": "amazon.lambda.core/2.1.0",
+      "hashPath": "amazon.lambda.core.2.1.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.Serialization.SystemTextJson/2.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7dGGgikMlEz72rGqeDwQEIxq+O8RDEdR4GH2S7hfZ8uzv5lyWVDuP2urV6MyD6APJ2WVHRwJlV74bB+XJncQpw==",
+      "path": "amazon.lambda.serialization.systemtextjson/2.3.1",
+      "hashPath": "amazon.lambda.serialization.systemtextjson.2.3.1.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.7.106.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n/7kZmxVAV3KPNOoYK92tshuRjELk0yxIeR4I+habFiHgAkJQxJyzKb6vvIn7I1wgCEDRq0N+FgCLGp0JwCkJA==",
+      "path": "awssdk.core/3.7.106.10",
+      "hashPath": "awssdk.core.3.7.106.10.nupkg.sha512"
+    },
+    "AWSSDK.SecretsManager/3.7.102.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ti0JbMUDmEQ5DBUHK3c/YdVo0Ov83f25vxF4I67LM+W2AsGlGu8smzJXAFxi9FYLvH8G15FoPU1KBLfi5ZckrA==",
+      "path": "awssdk.secretsmanager/3.7.102.15",
+      "hashPath": "awssdk.secretsmanager.3.7.102.15.nupkg.sha512"
+    },
+    "AWSSDK.SimpleNotificationService/3.7.101.37": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gM+vVUug0zH5IlSzaMXms67V2ALm7OBk8BXM7qAKALt6kF9bHmMv4c42PBv66tfIXk6UrcWjzR1FXQJ9whCIMA==",
+      "path": "awssdk.simplenotificationservice/3.7.101.37",
+      "hashPath": "awssdk.simplenotificationservice.3.7.101.37.nupkg.sha512"
+    }
+  }
+}
