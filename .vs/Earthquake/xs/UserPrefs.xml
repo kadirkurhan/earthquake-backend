@@ -15,15 +15,16 @@
   </MultiItemStartupConfigurations>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Services.Emergency.Earthquake.Emergency PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Services/Emergency/Earthquake.Emergency/appsettings.Development.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/Emergency/Earthquake.Emergency/Contexts/AppContext.cs">
     <Files>
-      <File FileName="Services/Notification/MyFunction/src/MyFunction/Function.cs" Line="68" Column="1" />
-      <File FileName="Services/Notification/MyFunction/src/MyFunction/aws-lambda-tools-defaults.json" Line="1" Column="1" />
-      <File FileName="Services/Emergency/Earthquake.Emergency/Endpoints/CreateEmergency.cs" Line="98" Column="6" />
-      <File FileName="Services/Emergency/Earthquake.Emergency/Program.cs" Line="14" Column="1" />
-      <File FileName="Services/Notification/MyFunction/test/MyFunction.Tests/FunctionTest.cs" Line="17" Column="1" />
-      <File FileName="Services/Emergency/Earthquake.Emergency/Properties/launchSettings.json" Line="1" Column="1" />
-      <File FileName="Services/Emergency/Earthquake.Emergency/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="Services/Notification/MyFunction/src/MyFunction/Function.cs" />
+      <File FileName="Services/Notification/MyFunction/src/MyFunction/aws-lambda-tools-defaults.json" />
+      <File FileName="Services/Emergency/Earthquake.Emergency/Endpoints/CreateEmergency.cs" />
+      <File FileName="Services/Emergency/Earthquake.Emergency/Program.cs" Line="14" Column="33" />
+      <File FileName="Services/Notification/MyFunction/test/MyFunction.Tests/FunctionTest.cs" />
+      <File FileName="Services/Emergency/Earthquake.Emergency/Properties/launchSettings.json" />
+      <File FileName="Services/Emergency/Earthquake.Emergency/appsettings.Development.json" Line="9" Column="1" />
+      <File FileName="Services/Emergency/Earthquake.Emergency/Contexts/AppContext.cs" Line="21" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -32,10 +33,8 @@
             <Node name="Services" expanded="True">
               <Node name="Emergency" expanded="True">
                 <Node name="Earthquake.Emergency" expanded="True">
-                  <Node name="Endpoints" expanded="True" />
-                  <Node name="Properties" expanded="True" />
-                  <Node name="appsettings.json" expanded="True">
-                    <Node name="appsettings.Development.json" selected="True" />
+                  <Node name="Contexts" expanded="True">
+                    <Node name="AppContext.cs" selected="True" />
                   </Node>
                 </Node>
               </Node>
@@ -47,6 +46,11 @@
               </Node>
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Earthquake" expanded="True" />
         </State>
       </Pad>
     </Pads>

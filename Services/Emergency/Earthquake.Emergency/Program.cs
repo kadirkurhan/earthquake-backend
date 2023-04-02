@@ -1,6 +1,8 @@
 ﻿global using FastEndpoints;
-
+using Amazon.SecretsManager;
+using Earthquake.Emergency.Contexts;
 using Earthquake.Emergency.Entities;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddFastEndpoints();
@@ -11,6 +13,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddHttpClient();
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+        policy =>
+        {
+            policy.WithOrigins("http://localhost", "http://localhost").AllowAnyHeader()
+                                                  .AllowAnyMethod();
+        });
+});
 
 var app = builder.Build();
 
