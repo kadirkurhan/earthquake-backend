@@ -49,11 +49,11 @@ public class CreateEmergencyEndpoint : Endpoint<RequestModel>
 
         foreach (var item in notExistUsers)
         {
-            //if (!notExistReportedUserIds.Contains(item.UserId))
-            //{
-            //    continue;
-            //}
-           
+            if (!notExistReportedUserIds.Contains(item.UserId))
+            {
+                continue;
+            }
+
             await context.Emergencies.AddAsync(new EmergencyEntity
             {
                 Id = random.Next(),
@@ -76,9 +76,13 @@ public class CreateEmergencyEndpoint : Endpoint<RequestModel>
 
         await context.SaveChangesAsync();
 
-        const string lambdaGatewayUrl = "https://w7ug5epr25.execute-api.eu-central-1.amazonaws.com/prod/api/notification";
+        var awsClient = new AmazonSecretsManagerClient();
+        var lambdaGatewayUrl = await awsClient.GetSecretValueAsync(new Amazon.SecretsManager.Model.GetSecretValueRequest
+        {
+            SecretId = "api-gateway-notification-lambda-url"
+        });
 
-        var client = _httpClientFactory.CreateClient();
+        var httpClient = _httpClientFactory.CreateClient();
 
         var request = new CreateRequestDto
         {
@@ -88,7 +92,7 @@ public class CreateEmergencyEndpoint : Endpoint<RequestModel>
 
         if (willSendLambdaData is not null)
         {
-            var httpRequestMessage = new HttpRequestMessage(System.Net.Http.HttpMethod.Post, lambdaGatewayUrl)
+            var httpRequestMessage = new HttpRequestMessage(System.Net.Http.HttpMethod.Post, lambdaGatewayUrl.SecretString)
             {
                 Headers =
                 {
@@ -97,7 +101,7 @@ public class CreateEmergencyEndpoint : Endpoint<RequestModel>
                 Content = new StringContent(JsonSerializer.Serialize(request), Encoding.UTF8, "application/json")
             };
 
-            var result = await client.SendAsync(httpRequestMessage);
+            var result = await httpClient.SendAsync(httpRequestMessage);
         }
         
         await SendAsync(200);
