@@ -13,6 +13,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddHttpClient();
+//builder.Services.AddDbContext<ApplicationContext>(async opt =>
+//{
+//    var client = new AmazonSecretsManagerClient();
+//    var connectionString = await client.GetSecretValueAsync(new Amazon.SecretsManager.Model.GetSecretValueRequest
+//    {
+//        SecretId = "rds-connection-string"
+//    });
+//    opt.UseNpgsql(connectionString.SecretString);
+//});
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(

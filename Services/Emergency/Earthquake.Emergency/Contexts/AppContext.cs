@@ -9,10 +9,9 @@ namespace Earthquake.Emergency.Contexts
 {
     public class ApplicationContext : DbContext
     {
-
-        protected async override void OnConfiguring(DbContextOptionsBuilder options)
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseNpgsql(await GetConnectionString());
+            options.UseNpgsql(GetConnectionString().Result);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -31,8 +30,7 @@ namespace Earthquake.Emergency.Contexts
 
         }
 
-        public DbSet<EmergencyEntity> Emergencies;
-
+        public DbSet<EmergencyEntity> Emergencies { get; set; }
     }
 }
 
