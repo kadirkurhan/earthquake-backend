@@ -1,12 +1,10 @@
 ﻿global using FastEndpoints;
 using Amazon.SecretsManager;
 using Earthquake.Emergency.Contexts;
-using Earthquake.Emergency.Entities;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddFastEndpoints();
-
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -27,13 +25,14 @@ builder.Services.AddCors(options =>
     options.AddDefaultPolicy(
         policy =>
         {
-            policy.WithOrigins("http://localhost", "http://localhost").AllowAnyHeader()
-                                                  .AllowAnyMethod();
+            policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyMethod().AllowAnyHeader();
+            //policy.WithOrigins("http://localhost", "http://localhost", "exp://192.168.43.180:19000").AllowAnyHeader()
+            //                                      .AllowAnyMethod();
         });
 });
 
 var app = builder.Build();
-
+app.MapGet("/api/healthcheck", () => "healthy");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -42,6 +41,6 @@ if (app.Environment.IsDevelopment())
 }
 app.UseFastEndpoints();
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.Run();

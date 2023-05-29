@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Earthquake.Emergency.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20230402125653_AddedEmergencyEntity")]
-    partial class AddedEmergencyEntity
+    [Migration("20230528150333_ModelTypeChanges")]
+    partial class ModelTypeChanges
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -31,13 +31,11 @@ namespace Earthquake.Emergency.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Latidute")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<float>("Latidute")
+                        .HasColumnType("real");
 
-                    b.Property<string>("Longidute")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<float>("Longidute")
+                        .HasColumnType("real");
 
                     b.Property<int>("ReportedByUserId")
                         .HasColumnType("integer");

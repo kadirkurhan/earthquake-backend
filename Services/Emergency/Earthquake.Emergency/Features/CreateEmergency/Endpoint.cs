@@ -2,7 +2,6 @@
 using System;
 using System.Text;
 using System.Text.Json;
-using Earthquake.Emergency.Entities;
 using Microsoft.Net.Http.Headers;
 using System.Net.Http;
 using Amazon.SecretsManager;

@@ -6,8 +6,8 @@ namespace Earthquake.Emergency.Domain.Entities.Emergency
 		public int Id { get; set; }
         public int UserId { get; set; }
         public int ReportedByUserId { get; set; }
-        public string Longidute { get; set; }
-        public string Latidute { get; set; }
+        public float Longidute { get; set; }
+        public float Latidute { get; set; }
     }
 }
 

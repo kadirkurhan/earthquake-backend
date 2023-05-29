@@ -29,13 +29,11 @@ namespace Earthquake.Emergency.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Latidute")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<float>("Latidute")
+                        .HasColumnType("real");
 
-                    b.Property<string>("Longidute")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<float>("Longidute")
+                        .HasColumnType("real");
 
                     b.Property<int>("ReportedByUserId")
                         .HasColumnType("integer");

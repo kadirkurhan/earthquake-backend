@@ -8,6 +8,7 @@
     <UserSecretsId>d2337061-8fa8-479c-975d-6131e1725698</UserSecretsId>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'corePostgresIdentity' " />
   <ItemGroup>
     <PackageReference Include="FastEndpoints" Version="5.8.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
@@ -32,6 +33,8 @@
     <None Remove="Domain\Entities\Emergency\" />
     <None Remove="Models\DTO\" />
     <None Remove="Models\DTO\Emergency\" />
+    <None Remove="Features\GetEmergencies\" />
+    <None Remove="Migrations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contexts\" />
@@ -41,5 +44,7 @@
     <Folder Include="Domain\Entities\Emergency\" />
     <Folder Include="Models\DTO\" />
     <Folder Include="Models\DTO\Emergency\" />
+    <Folder Include="Features\GetEmergencies\" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 </Project>

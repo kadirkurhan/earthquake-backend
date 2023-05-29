@@ -5,7 +5,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Earthquake.Emergency.Migrations
 {
-    public partial class AddedEmergencyEntity : Migration
+    public partial class ModelTypeChanges : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -17,8 +17,8 @@ namespace Earthquake.Emergency.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     UserId = table.Column<int>(type: "integer", nullable: false),
                     ReportedByUserId = table.Column<int>(type: "integer", nullable: false),
-                    Longidute = table.Column<string>(type: "text", nullable: false),
-                    Latidute = table.Column<string>(type: "text", nullable: false)
+                    Longidute = table.Column<float>(type: "real", nullable: false),
+                    Latidute = table.Column<float>(type: "real", nullable: false)
                 },
                 constraints: table =>
                 {

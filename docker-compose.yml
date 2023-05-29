@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  earthquake.emergency:
+    image: ${DOCKER_REGISTRY-}earthquake
+    build:
+      context: .
+      dockerfile: Services/Emergency/Earthquake.Emergency/Dockerfile

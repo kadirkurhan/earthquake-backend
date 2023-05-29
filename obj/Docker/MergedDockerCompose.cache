@@ -1,0 +1,16 @@
+services:
+  earthquake.emergency:
+    build:
+      context: /Users/kadirkurhan/Projects/MT.DEPREM
+      dockerfile: Services/Emergency/Earthquake.Emergency/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: earthquake
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - /Users/kadirkurhan/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/kadirkurhan/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'
