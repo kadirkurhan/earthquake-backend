@@ -20,6 +20,9 @@ builder.Services.AddHttpClient();
 //    });
 //    opt.UseNpgsql(connectionString.SecretString);
 //});
+builder.Services.AddMemoryCache();
+builder.Services.AddResponseCaching(); //add this
+
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(
@@ -39,6 +42,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseResponseCaching(); //add this
+
 app.UseFastEndpoints();
 
 //app.UseHttpsRedirection();

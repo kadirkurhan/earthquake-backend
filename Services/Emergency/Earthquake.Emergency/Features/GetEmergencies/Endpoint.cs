@@ -13,10 +13,13 @@ using System.Linq;
 using Earthquake.Emergency.Models.DTO.Emergency;
 using Microsoft.EntityFrameworkCore;
 using Amazon.Runtime.Internal;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.Extensions.Caching.Memory;
 
 public class GetEmergencyEndpoint : EndpointWithoutRequest<List<GetEmergenciesResponse>>
 {
     private readonly IHttpClientFactory _httpClientFactory;
+    private readonly IMemoryCache _cache;
 
     private List<string> colorList = new();
 
@@ -24,13 +27,13 @@ public class GetEmergencyEndpoint : EndpointWithoutRequest<List<GetEmergenciesRe
     {
         Get("/api/emergencies");
         AllowAnonymous();
+        ResponseCache(10); //cache for 60 seconds
+
     }
 
-    public GetEmergencyEndpoint(IHttpClientFactory httpClientFactory)
+    public GetEmergencyEndpoint(IHttpClientFactory httpClientFactory, IMemoryCache cache)
     {
         colorList = new List<string> {
-            "#00ff00",
-            "#33ff00",
             "#66ff00",
             "#99ff00",
             "#ccff00",
@@ -42,13 +45,20 @@ public class GetEmergencyEndpoint : EndpointWithoutRequest<List<GetEmergenciesRe
         };
 
         _httpClientFactory = httpClientFactory;
+        _cache = cache;
     }
 
     public override async Task HandleAsync(CancellationToken c)
     {
+        //if (_cache.TryGetValue("myCache", out List<GetEmergenciesResponse> list))
+        //      await SendAsync(
+        //            list,
+        //            cancellation: c
+        //        );
+
         using var context = new ApplicationContext();
         var random = new Random();
-        var emergencies = await context.Emergencies.ToListAsync();
+        var emergencies = await context.Emergencies.Include(x=>x.User).ToListAsync();
 
         var responseObjectList = new List<GetEmergenciesResponse>();
 
@@ -56,18 +66,18 @@ public class GetEmergencyEndpoint : EndpointWithoutRequest<List<GetEmergenciesRe
         {
             responseObjectList.Add(new GetEmergenciesResponse
             {
-                Status = colorList[random.Next(9)],
+                Status = colorList[random.Next(2,7)],
                 Longidute = e.Longidute,
-                Latidute = e.Latidute
+                Latidute = e.Latidute,
+                Name = e.User.Name
             });
         }
 
-        var response = new GetEmergenciesResponse
-        {
-            Status = "okey"
-        };
-
-        var json = JsonSerializer.Serialize(response);
+        //_cache.Set("myCache", responseObjectList, new MemoryCacheEntryOptions
+        //{
+        //    AbsoluteExpiration = DateTime.Now.AddSeconds(10),
+        //    Priority = CacheItemPriority.Normal
+        //});
 
         await SendAsync(
                     responseObjectList,

@@ -35,6 +35,7 @@
     <None Remove="Models\DTO\Emergency\" />
     <None Remove="Features\GetEmergencies\" />
     <None Remove="Migrations\" />
+    <None Remove="Domain\Entities\User\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contexts\" />
@@ -46,5 +47,6 @@
     <Folder Include="Models\DTO\Emergency\" />
     <Folder Include="Features\GetEmergencies\" />
     <Folder Include="Migrations\" />
+    <Folder Include="Domain\Entities\User\" />
   </ItemGroup>
 </Project>

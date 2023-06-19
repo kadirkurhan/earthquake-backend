@@ -1,19 +1,22 @@
 ﻿<Properties StartupConfiguration="{4361CFF9-9D81-4D5F-AFA6-6C40360607A1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Services/Emergency/Earthquake.Emergency/Features/GetEmergencies/Endpoint.cs">
+  <MonoDevelop.Ide.ItemProperties.Services.Notification.MyFunction.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/kadirkurhan/Projects/MT.DEPREM/Services/Notification/MyFunction/src/MyFunction/Function.cs" relfile="Services/Notification/MyFunction/src/MyFunction/Function.cs" line="43" column="1" />
+      <Breakpoint file="/Users/kadirkurhan/Projects/MT.DEPREM/Services/Emergency/Earthquake.Emergency/Features/CreateEmergency/Endpoint.cs" relfile="Services/Emergency/Earthquake.Emergency/Features/CreateEmergency/Endpoint.cs" line="31" column="1" />
+      <Breakpoint file="/Users/kadirkurhan/Projects/MT.DEPREM/Services/Emergency/Earthquake.Emergency/Features/CreateEmergency/Endpoint.cs" relfile="Services/Emergency/Earthquake.Emergency/Features/CreateEmergency/Endpoint.cs" line="78" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Earthquake.Authorization PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/Emergency/Earthquake.Emergency/Features/CreateEmergency/Endpoint.cs">
     <Files>
-      <File FileName="Services/Emergency/Earthquake.Emergency/Models/DTO/Emergency/CreateRequestDto.cs" Line="12" Column="18" />
-      <File FileName="Services/Emergency/Earthquake.Emergency/Features/CreateEmergency/Endpoint.cs" Line="104" Column="1" />
-      <File FileName="Services/Emergency/Earthquake.Emergency/Features/CreateEmergency/Request.cs" Line="11" Column="50" />
-      <File FileName="Services/Emergency/Earthquake.Emergency/Contexts/AppContext.cs" Line="10" Column="18" />
-      <File FileName="Services/Emergency/Earthquake.Emergency/Program.cs" Line="11" Column="34" />
-      <File FileName="Services/Emergency/Earthquake.Emergency/Domain/Entities/Emergency/EmergencyEntity.cs" Line="4" Column="15" />
-      <File FileName="Services/Notification/MyFunction/src/MyFunction/Function.cs" Line="16" Column="29" />
-      <File FileName="Services/Notification/MyFunction/test/MyFunction.Tests/FunctionTest.cs" Line="1" Column="1" />
-      <File FileName="Services/Emergency/Earthquake.Emergency/Entities/Emergency.cs" Line="11" Column="2" />
-      <File FileName="Services/Emergency/Earthquake.Emergency/Dockerfile" Line="12" Column="50" />
-      <File FileName="Services/Emergency/Earthquake.Emergency/Features/GetEmergencies/Endpoint.cs" Line="46" Column="1" />
-      <File FileName="Services/Emergency/Earthquake.Emergency/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="Services/Emergency/Earthquake.Emergency/Properties/launchSettings.json" Line="36" Column="8" />
+      <File FileName="Services/Emergency/Earthquake.Emergency/Features/GetEmergencies/Endpoint.cs" Line="53" Column="84" />
+      <File FileName="Services/Emergency/Earthquake.Emergency/Features/CreateEmergency/Endpoint.cs" Line="78" Column="42" />
+      <File FileName="Services/Emergency/Earthquake.Emergency/Program.cs" />
+      <File FileName="Services/Emergency/Earthquake.Emergency/Domain/Entities/Emergency/EmergencyEntity.cs" Line="17" Column="1" />
+      <File FileName="Services/Emergency/Earthquake.Emergency/Domain/Entities/User/UserEntity.cs" />
+      <File FileName="Services/Emergency/Earthquake.Emergency/Contexts/AppContext.cs" Line="24" Column="100" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,6 +25,19 @@
             <Node name="Services" expanded="True">
               <Node name="Emergency" expanded="True">
                 <Node name="Earthquake.Emergency" expanded="True">
+                  <Node name="Contexts" expanded="True" />
+                  <Node name="Domain" expanded="True">
+                    <Node name="Entities" expanded="True">
+                      <Node name="Emergency" expanded="True" />
+                      <Node name="User" expanded="True" />
+                    </Node>
+                  </Node>
+                  <Node name="Features" expanded="True">
+                    <Node name="CreateEmergency" expanded="True">
+                      <Node name="Endpoint.cs" selected="True" />
+                    </Node>
+                    <Node name="GetEmergencies" expanded="True" />
+                  </Node>
                   <Node name="Migrations" expanded="True" />
                 </Node>
               </Node>
@@ -37,6 +53,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
       <Items>
@@ -44,16 +61,5 @@
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>
-  <MonoDevelop.Ide.ItemProperties.Services.Notification.MyFunction.Tests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Earthquake.Authorization PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/kadirkurhan/Projects/MT.DEPREM/Services/Notification/MyFunction/src/MyFunction/Function.cs" relfile="Services/Notification/MyFunction/src/MyFunction/Function.cs" line="43" column="1" />
-      <Breakpoint file="/Users/kadirkurhan/Projects/MT.DEPREM/Services/Emergency/Earthquake.Emergency/Features/CreateEmergency/Endpoint.cs" relfile="Services/Emergency/Earthquake.Emergency/Features/CreateEmergency/Endpoint.cs" line="103" column="1" />
-      <Breakpoint file="/Users/kadirkurhan/Projects/MT.DEPREM/Services/Emergency/Earthquake.Emergency/Features/CreateEmergency/Endpoint.cs" relfile="Services/Emergency/Earthquake.Emergency/Features/CreateEmergency/Endpoint.cs" line="92" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Services.Emergency.Earthquake.Emergency PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
